@@ -4,27 +4,56 @@
 
 ## Objective
 
-Faker Web Service (a.k.a FakerWS in short) will allow users to generate structured data in bulk.  
-The data is generated on the fly as per the specifications given by the user. All APIs are stateless  
-by design. The main objective of this work is to learn system-design internals of a service which generates  
-huge amount of data and sends over web.   
+Faker Web Service (FakerWS) is aimed to generate structured data in bulk. It dynamically produces data on the fly based on user-defined specifications, offering flexibility and precision for diverse data generation needs. All APIs are inherently stateless, ensuring a scalable and efficient design.
 
-There are lot of learning scopes with this simple example like non-functional challenges like compute resources,  
-memory management, validations, security, load-balancing and functional challenges like producing consistent results,  
-handling request-response in right format, header management & manipulation, etc.
+### Key Objectives:
+1. **System Design Exploration:**  
+The primary purpose of FakerWS is to serve as a practical implementation for exploring and understanding the system design principles of services that handle large-scale data generation and transmission over the web.
+2. **Hands-On Learning:**  
+By developing this service, the focus is on gaining hands-on experience with various architectural decisions, understanding trade-offs, and tackling real-world challenges in both functional and non-functional domains.
+
+### Learning Opportunities
+
+FakerWS provides significant opportunities to address a wide range of challenges, including but not limited to:
+
+**Non-Functional Challenges:**  
+* Resource Optimization: Efficiently utilizing compute and memory resources for high performance.
+* Scalability & Load Balancing: Designing a system capable of handling high concurrency and distributing load effectively.
+* Security: Ensuring secure data handling, transmission, and API access.
+* Validation & Monitoring: Managing robust input validations and implementing monitoring mechanisms for reliability.
+
+**Functional Challenges:**  
+* Data Consistency: Producing consistent results even under varying load conditions.
+* Request-Response Management: Properly handling request formats, managing response structures, and ensuring smooth communication.
+* Metadata Management: Dealing with HTTP headers and other metadata markers for better customization, debugging, and control of data flow.
+
+### Impact
+
+FakerWS is more than just a data generation tool — it is a platform for learning and refining core principles of distributed systems, API design, and scalable architecture. It serves as a sandbox for tackling real-world challenges in a controlled environment, offering deep insights into building robust and efficient web services.
 
 ## Expectations
-Expected to learn following key concepts
 
-* Design Patterns,SOLID Principles, Polymorphism
-* Memory Management, Caching, Object Handling
-* Multithreading, Synchronization
-* Data Manipulation, String Handling
-* Scaling, Traffic Handling
-* Resource Utilization & Optimization
-* Validations, Exception Handling
-* Authentication, Security, Monitoring
-* Data-store management, Decentralized Truth Store
+By working with FakerWS, you are expected to learn and explore the following key areas:
+1. **Design Patterns and Principles**  
+   Understanding key patterns (e.g., Factory, Singleton, Builder) and principles like SOLID and DRY for scalable design.
+1. **Memory Management and Optimization**  
+   Learning about garbage collection, heap usage, object pooling, and frameworks like Ehcache or Caffeine for caching.
+1. **Multithreading and Concurrency**  
+   Exploring synchronization, thread pooling, and concurrent collections using Java Concurrency Framework or RxJava.
+1. **Data Manipulation and String Handling**  
+   Techniques for efficiently managing and processing large datasets and strings with libraries like Apache Commons or Guava.
+1. **Scaling and Traffic Management**  
+   Handling scalability challenges with load balancing using tools like NGINX or HAProxy and autoscaling strategies with Kubernetes.
+1. **Resource Utilization and Optimization**  
+   Monitoring resource usage (CPU, memory) and tuning performance using tools like JProfiler or VisualVM.
+1. **Validations and Exception Handling**  
+   Implementing robust data validation and error-handling mechanisms using frameworks like Hibernate Validator.
+1. **Authentication, Security, and Monitoring**  
+   Securing APIs with OAuth 2.0, JWT, and enabling observability with tools like Prometheus, Grafana, or ELK Stack.
+1. **Data-Store Management**  
+   Optimizing interactions with databases (SQL and NoSQL) using JPA/Hibernate, MongoDB, or Redis.
+1. **Decentralized Truth Store**  
+   Exploring distributed systems and eventual consistency using Apache Kafka, Cassandra, or Zookeeper.
 
 ## Scopes
 
@@ -72,6 +101,9 @@ The application supports creating following base-types:
 * Email
 * Domain Name
 * Website URL
+* Debit/Credit Card Number
+* Account Number
+* Bank Name
 * File Name
 * File Path
 
@@ -118,9 +150,6 @@ The application also support creating data using custom-types. More details will
 #### Low-level Design
 
 ## Disclaimer
+I am aware that there are advanced tools and services available online, along with well-established techniques that they may use. However, my primary goal with this implementation is to rely on my own understanding and learning to build a solution from scratch.  This approach allows me to thoroughly grasp the underlying concepts and work through the complexities of systems that handle large-scale, diverse datasets.
 
-There are better tools & services available online and I am aware of certain techniques what they might be using.  
-This is, however, in its simplest form, my way of implementing this requirement. I am building this to learn concepts  
-and go through the complexities of similar systems that deal with huge amount of data of different varieties. I am  
-definitely aiming to read more about the topic, learn other ways to do the same thing and hence keep enhancing the  
-implementation. If you're reading this, and have suggestions for me, feel free to connect on my email `hpx.io@keemail.me`.
+While I aim to improve this implementation over time by learning from other sources and solutions, I believe in first applying my own knowledge to fully internalize the challenges and principles. If you have suggestions or insights, I would greatly appreciate your feedback. Please feel free to connect with me via email.
