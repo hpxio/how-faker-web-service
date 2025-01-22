@@ -16,7 +16,7 @@ handling request-response in right format, header management & manipulation, etc
 ## Expectations
 Expected to learn following key concepts
 
-* Design Patterns,SOLID Principles, Polymophism
+* Design Patterns,SOLID Principles, Polymorphism
 * Memory Management, Caching, Object Handling
 * Multithreading, Synchronization
 * Data Manipulation, String Handling
@@ -24,6 +24,7 @@ Expected to learn following key concepts
 * Resource Utilization & Optimization
 * Validations, Exception Handling
 * Authentication, Security, Monitoring
+* Data-store management, Decentralized Truth Store
 
 ## Scopes
 
@@ -35,25 +36,31 @@ The application is capable of generating following types of structured data:
 
 ### Faker Data Types
 
+The application supports creating following base-types:
 * Date
 * Time
+* Timestamp
 * First Name
 * Last Name
 * Middle Name
 * City
 * State
 * Country
+* Continent
 * Address
 * Pin Code
 * Telephone Number
 * Mobile Numnber
 * UUID/GUID
-* Month Names
+* Month
 * Week Days
 * Calendar Year
 * Season
 * Number
 * Decimal
+* Binary
+* Octal
+* Hexadecimal
 * Currency
 * Amount
 * Color
@@ -67,14 +74,38 @@ The application is capable of generating following types of structured data:
 * Website URL
 * File Name
 * File Path
+
+The application also support creating data using custom-types. More details will be added soon.
+* Random Alpha-Numeric
+* Formatted Alpha-Numeric
+* Base62 Encoded
+* Base64 Encoded
 * Custom Function
 
 #### Multi-Format Support
 
-* Date: ISO, DDMMYYY, etc.
-* Time: Epoch, Nano, Milli, ISO, Timezone Based, HHMMSS, etc.
-* Number: Short Number, Long Number,
-* TBD
+* Date: ISO Date & Custom `DDMMYYY` Formats, Date Number, Date Between Range
+* Time: ISO Time & Custom `HHMMSS` Formats, Only HH, MM or SS, Time Between Range
+* Timestamp: ISO Timestamp, Epoch Time, Timezone Based, Composite Formats (Date+Time+TZ)
+* Number: Short Number, Long Number, Signed Numbers, Unsigned Numbers, Numbers Between Range
+* Decimal: Pie Value, Precision Digits Format, TBD*, Decimals Between Range
+* City: Random, State Specific, Country Specific, Starting Letter Specific
+* State: Random, Country Specific, Starting Letter Specific
+* Country: Random, Continent Specific, Starting Letter Specific
+* Address*: Random, Country Specific*, City Specific*
+* Telephone Number: 10 Digit International Format
+* Mobile Numnber: +(CC)-10 Digit Internation Format
+* Month: Full Names, 3 Letter, Month Number, Month Between Range
+* Week: Full Name of Days, 3 Letter, Week Number, Week Between Range
+* Calendar Year: Full Year, Last 2 Digits, Year Between Range 
+* Currency: ISO Currency, Full Name, Country Specific Currency
+* Amount: Minor Unit, Major Unit, Amount with Decimal Precision, Amount with Before/After Decimal Precision
+* Username: Length Based, Name Based, Quirky (AI featured*)
+* Password: Length Based, Password, Passphrase
+* Email: Real Domain, Fake Domain, Quirky (AI featured*)
+* Domain Name: COM/ORG/IO, etc.
+* File Name: Fixed Extension, Random Extension, Length Based
+* File Path: Windows Style, Linux Style
 
 ### Synthetic Data Generator
 
