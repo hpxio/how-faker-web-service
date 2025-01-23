@@ -65,7 +65,7 @@ The application is capable of generating following types of structured data:
 
 ### Faker Data Types
 
-The application supports creating following base-types:
+The application currently supports data types:
 * Date
 * Time
 * Timestamp
@@ -139,15 +139,25 @@ The application also support creating data using custom-types. More details will
 * File Name: Fixed Extension, Random Extension, Length Based
 * File Path: Windows Style, Linux Style
 
-### Synthetic Data Generator
+### How To Use
+
+_TBD_
 
 ### Libraries
+
+_TBD_
 
 ### Design
 
 #### High-level Design
 
+_TBD_
+
 #### Low-level Design
+
+_TBD_
+
+--
 
 ## Disclaimer
 I am aware that there are advanced tools and services available online, along with well-established techniques that they may use. However, my primary goal with this implementation is to rely on my own understanding and learning to build a solution from scratch.  This approach allows me to thoroughly grasp the underlying concepts and work through the complexities of systems that handle large-scale, diverse datasets.
